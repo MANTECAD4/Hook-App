@@ -5,6 +5,8 @@ import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <MultipleCustomHooks />
+    <div className="mx-auto w-fit">
+      <MultipleCustomHooks />
+    </div>
   </StrictMode>,
 )

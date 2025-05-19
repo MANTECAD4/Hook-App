@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-export const useCounter = ( initialState:number = 10) => {
+export const useCounter = ( initialState:number = 1) => {
 
     const [counter, setCounter] = useState(initialState);
 
@@ -10,7 +10,7 @@ export const useCounter = ( initialState:number = 10) => {
     }
 
     const onDecrement = ():void => {
-        if (counter <= 0) return;
+        if (counter <= 1) return;
         setCounter( counter - 1 );
     }
 

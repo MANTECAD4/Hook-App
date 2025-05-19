@@ -4,5 +4,5 @@ export type useFetchType = {
         data: (null | PokeAPI),
         isLoading: boolean,
         hasError: boolean,
-        error: (null | string)
+        error: (null | { code: number,message: string })
 }
