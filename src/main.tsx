@@ -7,7 +7,7 @@ import { TodoApp } from './08-useReducer/TodoApp';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div className='m-4'>
-      <TodoApp />
+      <TodoApp/>
     </div>
   </StrictMode>,
 )
