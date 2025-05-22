@@ -1,12 +1,16 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
-import { TodoApp } from './08-useReducer/TodoApp';
+import { MainApp } from './09-useContext/MainApp';
+import { BrowserRouter } from "react-router";
+
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <div className='m-4'>
-      <TodoApp/>
-    </div>
-  </StrictMode>,
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <StrictMode>
+      <div className='m-4'>
+        <MainApp/>
+      </div>
+    </StrictMode>
+  </BrowserRouter>
 )

@@ -14,7 +14,6 @@ export const todoReducer = ( initialState:Todo[], action:Action ) => {
                 return (todo.id === action.payload.id) ? {...todo, done: !todo.done }: todo;
             });
         default:
-            // console.log(`${action.type} action not recognized`);
             return initialState;
     }
 }
