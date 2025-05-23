@@ -1,6 +1,5 @@
 import { createContext, type Dispatch, type SetStateAction } from "react";
 
-
 type UserContextType = {
   greet: string;
   setGreet: Dispatch<SetStateAction<string>>;
